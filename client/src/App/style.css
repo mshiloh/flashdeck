@@ -1,11 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Bree+Serif|Crete+Round:400,400i|Merriweather:300,300i,400,400i,700,700i,900,900i|Suez+One');
@@ -19,7 +14,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #DFDCE3;
+    font-family: 'Raleway', sans-serif;
+    background: white;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .headerWrapper {
@@ -31,6 +31,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 175px;
     width: 100vw;
 }
 
@@ -41,19 +42,23 @@ body {
     align-content: center;
     width: 100vw;
     padding: 5px;
+    flex-direction: column;
 }
 
 .headerText {
     color: rgb(240, 232, 232);
-    font-family: 'Bree Serif', serif;
+    font-family: "Bree Serif", serif;
     display: block;
     float: left;
+    font-size: 14vw;
+    font-weight: 600;
 }
 
 .icon {
     display: block;
     float: right;
     overflow: auto;
+    padding-bottom: 5px;
     height: 40%;
     width: 40%;
 }
@@ -67,6 +72,8 @@ nav {
 
 .navWrapper {
     background: #FC4A1A;
+    height: auto;
+    padding: 8px;
 }
 
 .managerLink,
@@ -75,6 +82,7 @@ nav {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: whitesmoke;
+    font-size: 4.5vw;
 }
 
 .footerWrapper {
@@ -90,45 +98,13 @@ footer {
     display: flex;
     align-items: center;
     bottom: 0;
-    padding: 2.5vw;
-    font-size: 2.8vw;
+    padding: 1.8vw;
+    font-size: 3vw;
     flex: .1;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Didact+Gothic|Dosis:200,300,400,500,600,700,800|Jura:300,400,600,700|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oxygen:300,400,700|Poiret+One|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Questrial|Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Righteous|Work+Sans:100,200,300,400,500,600,700,800,900&subset=latin-ext');
 /* ------------------------------------------------------------------------------------------ */
-
-/* Small Mobile*/
-
-@media only screen and (max-width: 600px) {
-    .headerWrapper {
-        min-height: 125px;
-    }
-    .headerContainer {
-        flex-direction: column;
-    }
-    .headerText {
-        font-size: 10vw;
-        font-weight: 600;
-    }
-    .navWrapper {
-        height: auto;
-        padding: 8px;
-    }
-
-    .icon {
-        height: 40%;
-        width: 40%;
-    }
-    .homeLink,
-    .managerLink, {
-        font-size: 3.5vw;
-    }
-    footer {
-        padding: 1.8vw;
-        font-size: 3vw;
-    }
-}
 
 /* Large Mobile / Portrait Tablet */
 
@@ -136,12 +112,16 @@ footer {
     .headerWrapper {
         min-height: 175px;
     }
+    .headerContainer {
+        flex-direction: row;
+    }
     .headerText {
         padding: 5px;
-        font-size: 10vw;
-        font-weight: 600;
-        margin-top: 20px;
-        padding-bottom: 30px;
+        font-size: 12vw;
+    }
+    .icon{
+    padding-bottom: 0;
+        
     }
     .navWrapper {
         height: auto;
@@ -149,11 +129,11 @@ footer {
     }
     .homeLink,
     .managerLink {
-        font-size: 3.2vw;
+        font-size: 3.5vw;
     }
     footer {
         padding: 1.5vw;
-        font-size: 2vw;
+        font-size: 2.8vw;
     }
 }
 
@@ -165,7 +145,7 @@ footer {
     }
     .headerText {
         padding: 5px;
-        font-size: 8.5vw;
+        font-size: 10vw;
         font-weight: 600;
         margin-top: 20px;
         padding-bottom: 30px;

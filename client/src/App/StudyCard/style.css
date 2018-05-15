@@ -1,10 +1,10 @@
 .studyWrapper {
-    background: #FFF8E1;
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2.5vw;
-    flex: 50;
+    flex: 3.5;
 }
 
 .wrapperQA {
@@ -16,19 +16,19 @@
 }
 
 .containerQ {
-    background-image: url("https://i.imgur.com/RlCkjA8.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: inset 10px #69452D;
+    background: #4ABDAC;
     color: white;
     padding: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 70vw;
+    margin-top: 20px;
     min-height: 100px;
+    height: 30vh;
+    width: 80vw;
+    font-size: 5.5vh;
+    font-size: 5.5vw;
 }
 
 .correctAnswer {
@@ -38,28 +38,27 @@
     font-size: 5vw;
     font-weight: 900;
     text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 5vw;
 }
 
 .answerForm {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    color: #FFF8E1;
     background-color: none;
+    padding: 10px;
 }
 
 .answerInput {
-    width: 80vw;
     font-weight: 600;
-    color: #422c25;
     background: white;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-}
-
-::placeholder {
-    color: #422c25;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80vw;
+    font-size: 3.5vw;
 }
 
 .checkWrapper {
@@ -72,23 +71,32 @@
 
 .checkButt {
     cursor: pointer;
-    font-size: 4vw;
-    background-image: url("https://i.imgur.com/RlCkjA8.png");
+    background-image: linear-gradient(to right, #F7B733 50.1%, white 50%);
+    background-size: 200% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    border-radius: 5px;
+    background-position: bottom right;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #F7B733;
+    border: solid 3.5px #F7B733;
+    font-weight: 500;
+    font-size: 4.5vw;
 }
 
 .checkButt:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-    font-weight: 700;
-    background-image: url("https://i.imgur.com/TcxZWO1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    transform: translateY(2px);
+    color: white;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    background-position: bottom left;
 }
 
 .nextBackWrapper {
@@ -102,63 +110,25 @@
 .nextButt,
 .backButt {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    font-size: 6vw;
     text-align: center;
-    width: 8.5vw;
-    background-image: url("https://i.imgur.com/RlCkjA8.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    color: white;
-    border-radius: 5px;
+    background: none;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    color: #4ABDAC;
+    height: auto;
+    width: auto;
+    transition-duration: .5s;
+    font-size: 20vw;
 }
 
 .nextButt:hover,
 .backButt:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+    color: #FC4A1A;
     font-weight: 700;
-    background-image: url("https://i.imgur.com/TcxZWO1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-/* Small Mobile*/
-
-@media only screen and (max-width: 600px) {
-    .wrapperQA {
-        padding-bottom: 20px;
-    }
-    .containerQ {
-        height: 20vh;
-        font-size: 4vh;
-        font-size: 4vw;
-    }
-    .correctAnswer {
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 5vw;
-    }
-    .answerForm {
-        padding: 10px;
-    }
-    .answerInput {
-        font-size: 3.6vw;
-    }
-    .checkWrapper {
-        padding: 10px;
-    }
-    .checkButt {
-        font-size: 3.5vw;
-    }
-    .nextButt,
-    .backButt {
-        font-size: 5.5vw;
-    }
 }
 
 /* Large Mobile / Portrait Tablet */

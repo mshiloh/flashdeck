@@ -1,19 +1,21 @@
 .homeWrapper {
-    background: whitesmoke;
+    background: white;
     grid-area: cnt;
-    padding: 20px;
-    list-style: none;
-    flex: 3;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    list-style: none;
+    flex: 3;
+    width: 100vw;
+    padding: 4vw;    
 }
 
 .homeHeader {
     font-style: italic;
     font-weight: 600;
     text-align: center;
+    font-size: 3vw;
+        padding: 1vw;
 }
 
 .homeUl {
@@ -30,7 +32,7 @@
     display: block;
     margin: 0 auto;
     text-decoration: none;
-    color:whitesmoke;
+    color:white;
     background-image: linear-gradient(to right, #F7B733 50%, #4ABDAC 50%);
     background-size: 200% 100%;
     background-repeat: no-repeat;
@@ -40,6 +42,7 @@
     transition: all 0.25s ease-in;
     cursor: pointer;
     width: 80vw;
+    padding: 2vw 3vw 2vw 6vw;    
   }
    
   .homeUl .homeLi:hover  {
@@ -47,38 +50,11 @@
     -moz-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     background-position: bottom left;
-  }
-
-a {
-    color: rgb(250, 244, 225);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 4.5vw;
     padding: 10px;
 }
 
-/* Small Mobile*/
-
-@media only screen and (max-width: 600px) {
-    .homeWrapper {
-        padding: 4vw;
-    }
-    .homeHeader {
-        font-size: 3vw;
-        padding: 1vw;
-    }
-    .homeUl .homeLi {
-        padding: 2vw 3vw 2vw 6vw;
-    }
-    .homeUl .homeLi:hover {
-        padding: 10px;
-    }
-    .homeLi {
-        font-size: 5.5vw;
-    }
-    a {
-        font-size: 3vw;
-    }
+.homeLi {
+    font-size: 4.5vw;
 }
 
 /* Large Mobile / Portrait Tablet */
@@ -99,10 +75,7 @@ a {
         padding: 10px;
     }
     .homeLi {
-        font-size: 4vw;
-    }
-    a {
-        font-size: 2.5vw;
+        font-size: 4.5vw;
     }
 }
 
@@ -127,11 +100,9 @@ a {
         padding: 10px;
     }
     .homeLi {
-        font-size: 4vw;
+        font-size: 3vw;
     }
-    a {
-        font-size: 2.5vw;
-    }
+
 
 }
 
@@ -152,9 +123,10 @@ a {
     .homeUl .homeLi:hover {
         padding: 10px;
     }
-    a {
+    .homeLi {
         font-size: 2.5vw;
     }
+   
 }
 
 /* Large Desktop */
@@ -174,7 +146,7 @@ a {
     .homeUl .homeLi:hover {
         padding: 10px;
     }
-    a {
+    .homeLi {
         font-size: 2vw;
     }
 }
@@ -196,7 +168,8 @@ a {
     .homeUl .homeLi:hover {
         padding: 10px;
     }
-    a {
-        font-size: 1.6vw;
+    .homeLi {
+        font-size: 2vw;
     }
+ 
 }

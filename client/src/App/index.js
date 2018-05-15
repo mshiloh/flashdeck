@@ -13,6 +13,8 @@ import Edit from "./Edit/";
 import New from "./New";
 import Footer from "./Footer.js";
 
+import "./style.css";
+
 
 class App extends Component {
     componentDidMount() {
