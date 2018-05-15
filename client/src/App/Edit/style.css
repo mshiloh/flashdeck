@@ -1,14 +1,15 @@
 .editWrapper {
-    padding-top: 10px;
-    background: whitesmoke;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     align-self: center;
     overflow: auto;
+    background: whitesmoke;
     flex: 3;
     width: 100vw;
+    padding: 20px;
+    padding-top: 10px;
 }
 
 .editForm,
@@ -17,10 +18,18 @@
     font-size: 3vw;
 }
 
+.editForm {
+    margin-bottom: 10px;
+    font-size: 3vw;
+}
+
+.fullEditForm {
+    padding: 10px;
+}
+
 .edittTitleWrapper,
 .editQuestionWrapper,
 .editAnswerWrapper {
-    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -30,23 +39,23 @@
 
 .qAndAHeader,
 .titleHeader {
-    font-size: 3.5vw;
-    color: #4ABDAC;
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 800;
+    color: #4ABDAC;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 3.8vw;
 }
 
 input {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
     width: 90vw;
     height: 4.5vw;
     min-height: 20px;
-    font-size: 2.2vw;
     border-radius: 1px;
     border-radius: 2px;
     margin: 3px;
@@ -54,18 +63,18 @@ input {
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: 600;
-    color: black;
+    font-size: 2.8vw;
 }
 
 input:focus {
     outline: none;
     border-color: #F7B733;
-    box-shadow: 0 0 10px #563931;
+    box-shadow: 0 0 13px #563931;
 }
 
 ::placeholder {
-    font-weight: 600;
-    color: black;
+    color: rgb(161, 161, 161);
+    font-weight: 500;
 }
 
 .addNewCardButt:focus {
@@ -74,15 +83,7 @@ input:focus {
 
 .addNewCardButt {
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    border: solid 2px #F7B733;
-    font-weight: 600;
-    color: #F7B733;
-    background-image: linear-gradient(to right, #F7B733 50%, white 50%);
+    background-image: linear-gradient(to right, #F7B733 50.1%, white 50%);
     background-size: 200% 100%;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -90,29 +91,40 @@ input:focus {
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     text-align: center;
+    text-decoration: none;
+    color: #F7B733;
+    border: solid 3px #F7B733;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90vw;
+    font-size: 3.8vw;
+    font-weight: 600;
 }
 
 .addNewCardButt:hover {
     cursor: pointer;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-    transform: translateY(2px);
-    font-weight: 800;
-    color: white;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     background-position: bottom left;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    transform: translateY(2px);
+    color: white;
 }
 
 .saveButt,
 .deleteButt,
 .saveNewButt {
+    cursor: pointer;
+    background: #4ABDAC;
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 20px;
-    cursor: pointer;
-    font-size: 2vw;
-    background: #4ABDAC;
+    font-size: 2.8vw;
     color: whitesmoke;
 }
 
@@ -120,8 +132,8 @@ input:focus {
 .saveButt:hover,
 .saveNewButt:hover,
 .saveNewCardButt:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     font-weight: 700;
 }
 
@@ -159,54 +171,6 @@ input:focus {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* Small Mobile*/
-
-@media only screen and (max-width: 600px) {
-    .editWrapper {
-        padding: 20px;
-        padding-top: 10px;
-    }
-    .editForm {
-        margin-bottom: 20px;
-        font-size: 3vw;
-    }
-    .fullEditForm {
-        padding: 10px;
-    }
-    .qAndAHeader,
-    .titleHeader {
-        font-size: 3.5vw;
-        padding: 10px;
-    }
-    input {
-        width: 90vw;
-        height: 4.5vw;
-        min-height: 20px;
-        font-size: 2.8vw;
-        margin: 3px;
-    }
-    .addNewCardButt {
-        width: 90vw;
-    }
-    .newCardButt {
-        font-size: 2.5vw;
-    }
-    .saveButt,
-    .deleteButt,
-    .saveNewButt {
-        margin-right: 5px;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        font-size: 2.5vw;
-    }
-    .addNewCardButt {
-        font-size: 2.5vw;
-    }
-    .newCardHeader {
-        padding-bottom: 10px;
-    }
-}
-
 /* Large Mobile / Portrait Tablet */
 
 @media only screen and (min-width: 600px) {
@@ -223,8 +187,8 @@ input:focus {
     }
     .qAndAHeader,
     .titleHeader {
-        font-size: 3.5vw;
         padding: 10px;
+        font-size: 3.2vw;
     }
     input {
         width: 90vw;
@@ -234,6 +198,9 @@ input:focus {
         margin: 3px;
     }
     .addNewCardButt {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid 4px #F7B733;
         width: 90vw;
     }
     .newCardButt {
@@ -246,7 +213,7 @@ input:focus {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 2.8vw;
+        font-size: 2.4vw;
     }
     .addNewCardButt {
         font-size: 2.8vw;
@@ -279,12 +246,14 @@ input:focus {
         width: 80vw;
         height: 3.5vw;
         min-height: 20px;
-        font-size: 1.8vw;
+        font-size: 2vw;
         margin: 3px;
     }
     .addNewCardButt {
+        margin-top: 30px;
+        margin-bottom: 10px;
         width: 80vw;
-        font-size: 3vw;
+        font-size: 2.4vw;
     }
     .newCardButt {
         font-size: 2.8vw;
@@ -292,8 +261,7 @@ input:focus {
     .saveButt,
     .deleteButt,
     .saveNewButt,
-    .saveNewCardButt,
-    .addNewCardButt {
+    .saveNewCardButt {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
@@ -328,24 +296,26 @@ input:focus {
         width: 80vw;
         height: 2.5vw;
         min-height: 10px;
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         margin: 3px;
     }
     .addNewCardButt {
+        margin-top: 40px;
+        margin-bottom: 10px;
         width: 80vw;
+        font-size: 1.8vw;
     }
     .newCardButt {
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
     .saveButt,
     .deleteButt,
     .saveNewButt,
-    .saveNewCardButt,
-    .addNewCardButt {
+    .saveNewCardButt {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 1.3vw;
+        font-size: 1.5vw;
     }
     .newCardHeader {
         padding-bottom: 10px;
@@ -373,26 +343,26 @@ input:focus {
         padding: 10px;
     }
     input {
+        margin: 4px;
         width: 75vw;
         height: 2.2vw;
         min-height: 10px;
         font-size: 1.5vw;
-        margin: 3px;
     }
     .addNewCardButt {
+        font-size: 1.8vw;
         width: 75vw;
     }
     .newCardButt {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
     .saveButt,
     .deleteButt,
     .saveNewButt,
-    .saveNewCardButt,
-    .addNewCardButt {
-        margin-right: 5px;
-        margin-top: 5px;
-        margin-bottom: 10px;
+    .saveNewCardButt {
+        margin-right: 8px;
+        margin-top: 8px;
+        margin-bottom: 15px;
         font-size: 1.5vw;
     }
     .newCardHeader {
@@ -422,11 +392,13 @@ input:focus {
         width: 75vw;
         height: 2.2vw;
         min-height: 10px;
-        font-size: 1vw;
+        font-size: 1.2vw;
         margin: 3px;
     }
     .addNewCardButt {
+        border: solid 4px #F7B733;
         width: 75vw;
+        font-size: 1.4vw;
     }
     .newCardButt {
         font-size: 1.5vw;
@@ -434,12 +406,11 @@ input:focus {
     .saveButt,
     .deleteButt,
     .saveNewButt,
-    .saveNewCardButt,
-    .addNewCardButt {
-        margin-right: 5px;
+    .saveNewCardButt {
+        margin-right: 10px;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
     .newCardHeader {
         padding-bottom: 10px;
